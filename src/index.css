@@ -1,0 +1,85 @@
+/* PWA Viewport Fix */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap');
+
+@viewport {
+  width: device-width;
+  zoom: 1.0;
+}
+
+
+:root {
+  --amaranto-ivory: #FDFBF7;
+  --amaranto-gold: #9E8555;
+  --amaranto-slate: #5A5E61;
+}
+
+/* GLOBAL RESET FOR MOBILE SCROLL */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 16px; /* Base size */
+  overflow-x: hidden; /* Critical */
+  scroll-behavior: smooth;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  width: 100%;
+  overflow-x: hidden; /* Critical double-lock */
+  font-family: 'Montserrat', sans-serif;
+  background-color: var(--amaranto-ivory);
+  color: #333;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  position: relative;
+}
+
+/* PWA Image Optimization */
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+/* Typography */
+.serif {
+  font-family: 'Playfair Display', serif !important;
+}
+
+/* Utilities */
+.wall-texture {
+  background-color: var(--amaranto-ivory);
+  background-image: url("https://www.transparenttextures.com/patterns/cream-paper.png");
+}
+
+/* Mobile-First Container */
+.container {
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding-left: 1.5rem;  /* Mobile padding */
+  padding-right: 1.5rem; /* Mobile padding */
+}
+
+/* Responsive Utilities */
+.text-center { text-align: center; }
+.uppercase { text-transform: uppercase; }
+.font-bold { font-weight: 700; }
+.relative { position: relative; }
+
+/* Custom Colors */
+.text-amaranto-gold { color: var(--amaranto-gold) !important; }
+.bg-amaranto-gold { background-color: var(--amaranto-gold) !important; }
+.bg-amaranto-slate { background-color: var(--amaranto-slate) !important; }
+
+/* Desktop Adjustments */
+@media (min-width: 768px) {
+  .container {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+}

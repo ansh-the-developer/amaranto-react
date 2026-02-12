@@ -1,0 +1,152 @@
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid #E5E5E5;
+}
+
+.navbar-container {
+  max-width: 1400px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.5rem 2rem;
+}
+
+/* Logo */
+.navbar-logo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0;
+}
+
+.logo-text {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.5rem;
+  font-weight: 700;
+  letter-spacing: 0.2em;
+  color: #1a1a1a;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.logo-text:hover {
+  color: var(--amaranto-gold);
+}
+
+.logo-subtitle {
+  font-size: 10px;
+  letter-spacing: 0.3em;
+  color: var(--amaranto-gold);
+  margin-top: -4px;
+}
+
+/* Desktop Menu */
+.navbar-menu {
+  display: none;
+  gap: 2.5rem;
+}
+
+.nav-link {
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.15em;
+  color: #6B7280;
+  text-decoration: none;
+  transition: color 0.3s;
+  white-space: nowrap;
+}
+
+.nav-link:hover {
+  color: var(--amaranto-gold);
+}
+
+/* Right Actions */
+.navbar-actions {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.inquire-btn {
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.15em;
+  color: var(--amaranto-gold);
+  text-decoration: none;
+  border-bottom: 1px solid var(--amaranto-gold);
+  padding: 0 0.5rem 0.25rem;
+  transition: all 0.3s;
+}
+
+.inquire-btn:hover {
+  background-color: var(--amaranto-gold);
+  color: white;
+}
+
+.mobile-toggle {
+  display: none;
+  background: transparent;
+  border: none;
+  font-size: 1.5rem;
+  color: #1a1a1a;
+  cursor: pointer;
+  padding: 0.5rem;
+}
+
+/* Mobile Menu */
+.mobile-menu {
+  display: none;
+  background: white;
+  border-bottom: 1px solid #E5E5E5;
+  padding: 2rem;
+  text-align: center;
+}
+
+.mobile-link {
+  display: block;
+  padding: 0.75rem 0;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.15em;
+  color: #6B7280;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.mobile-link:hover {
+  color: var(--amaranto-gold);
+}
+
+/* Responsive */
+@media (min-width: 768px) {
+  .navbar-menu {
+    display: flex;
+  }
+  
+  .mobile-toggle {
+    display: none;
+  }
+}
+
+@media (max-width: 767px) {
+  .navbar-menu {
+    display: none;
+  }
+  
+  .mobile-toggle {
+    display: block;
+  }
+  
+  .mobile-menu {
+    display: block;
+  }
+  
+  .inquire-btn {
+    display: none;
+  }
+}

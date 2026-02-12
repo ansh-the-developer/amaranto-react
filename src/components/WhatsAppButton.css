@@ -1,0 +1,59 @@
+.whatsapp-float {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  background-color: white;
+  padding: 0.75rem 0.75rem 0.75rem 1.5rem;
+  border-radius: 50px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08); /* Soft shadow */
+  text-decoration: none;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: 1px solid #F3F4F6;
+}
+
+.whatsapp-float:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 25px rgba(0, 0, 0, 0.12);
+}
+
+.whatsapp-text {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  color: #5A5E61; /* Dark grey text */
+  text-transform: uppercase;
+}
+
+.icon-circle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  /* Gold color circle is optional, or just the icon itself */
+}
+
+.whatsapp-icon {
+  width: 24px;
+  height: 24px;
+  color: #9E8555; /* Gold/Bronze color from screenshot */
+  transform: scaleX(-1); /* Flip icon if needed to match tail direction */
+}
+
+/* Mobile Responsive */
+@media (max-width: 640px) {
+  .whatsapp-float {
+    bottom: 1.5rem;
+    right: 1.5rem;
+    padding: 0.6rem 0.6rem 0.6rem 1.2rem;
+  }
+  
+  .whatsapp-text {
+    font-size: 10px;
+  }
+}

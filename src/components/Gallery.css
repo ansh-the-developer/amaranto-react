@@ -1,0 +1,95 @@
+.gallery-section {
+  padding: 8rem 2rem;
+}
+
+.gallery-container {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+/* Header - Centered with gold subtitle */
+.gallery-header {
+  text-align: center;
+  margin-bottom: 5rem;
+}
+
+.gallery-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 3.5rem;
+  font-weight: 400;
+  color: #1F2937;
+  line-height: 1;
+  margin-bottom: 1rem;
+}
+
+.gallery-subtitle {
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.5em;
+  color: #B09B75; /* Gold color */
+  text-transform: uppercase;
+}
+
+/* 3-Column Grid */
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+}
+
+/* Gallery Item */
+.gallery-item {
+  height: 320px; /* Fixed height matching screenshot */
+}
+
+.gallery-image-wrapper {
+  width: 100%;
+  height: 100%;
+  background-color: #F3F4F6;
+  border: 2px solid white;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.gallery-image-wrapper:hover {
+  transform: scale(1.02);
+}
+
+.gallery-image {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  transition: transform 0.7s ease;
+}
+
+.gallery-image-wrapper:hover .gallery-image {
+  transform: scale(1.1);
+}
+
+/* Wall Texture Background */
+@media (min-width: 768px) {
+  .gallery-section {
+    background-image: url("https://www.transparenttextures.com/patterns/cream-paper.png");
+    background-color: var(--amaranto-ivory);
+  }
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .gallery-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 640px) {
+  .gallery-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .gallery-title {
+    font-size: 2.5rem;
+  }
+}
