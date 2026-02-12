@@ -1,3 +1,4 @@
+import { useTranslation } from 'react-i18next';
 import './Gallery.css';
 
 const galleryImages = [
@@ -7,13 +8,15 @@ const galleryImages = [
 ];
 
 export default function Gallery() {
+  const { t } = useTranslation();
+
   return (
     <section id="gallery" className="gallery-section">
       <div className="gallery-container">
         {/* Header */}
         <div className="gallery-header">
-          <h2 className="gallery-title">The Gallery</h2>
-          <p className="gallery-subtitle">A Glimpse of Elegance</p>
+          <h2 className="gallery-title">{t('gallery.title')}</h2>
+          <p className="gallery-subtitle">{t('gallery.subtitle')}</p>
         </div>
 
         {/* 3-Column Image Grid */}

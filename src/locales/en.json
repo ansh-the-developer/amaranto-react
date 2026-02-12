@@ -1,0 +1,57 @@
+{
+  "navbar": {
+    "boutique": "THE BOUTIQUE",
+    "collections": "COLLECTIONS",
+    "gallery": "GALLERY",
+    "contact": "CONTACT",
+    "inquire": "INQUIRE"
+  },
+  "hero": {
+    "subtitle": "CHEONAN · BESPOKE · FINE JEWELRY",
+    "title_1": "Classic",
+    "title_2": "Reimagined.",
+    "description": "Where the ornate beauty of European Baroque meets modern Korean craftsmanship. Discover your legacy in our private Cheonan-si sanctuary.",
+    "explore": "EXPLORE COLLECTIONS",
+    "book": "BOOK A VIEWING"
+  },
+  "about": {
+    "label": "OUR PHILOSOPHY",
+    "title_1": "The Ornate Art of the",
+    "title_2": "Jewelry Box.",
+    "description": "Inspired by our signature ivory-embossed galleries, Amaranto offers a serene environment where the brilliance of 24k gold and pearls can be appreciated in silence.",
+    "feature_1": "BAROQUE INTERIOR DESIGN",
+    "feature_2": "HAND-SELECTED DIAMONDS",
+    "feature_3": "BESPOKE HERITAGE PIECES"
+  },
+  "collections": {
+    "label": "CURATED SERIES",
+    "title": "The Collections",
+    "description": "From daily essentials in 18k gold to once-in-a-lifetime high jewelry pieces featuring GIA certified stones.",
+    "items": {
+      "bridal": { "title": "Bridal & Solitaire", "subtitle": "ENGAGEMENT & WEDDING" },
+      "gold": { "title": "The Gold Line", "subtitle": "DAILY LUXURY" },
+      "ocean": { "title": "Ocean Baroque", "subtitle": "NATURAL PEARLS" },
+      "heritage": { "title": "Heritage Custom", "subtitle": "ONE-OF-A-KIND" }
+    }
+  },
+  "gallery": {
+    "title": "The Gallery",
+    "subtitle": "A GLIMPSE OF ELEGANCE"
+  },
+  "contact": {
+    "visit_title": "Visit Us.",
+    "boutique_label": "THE BOUTIQUE",
+    "address": "Amaranto Jewelry\n213 Baekseok-ro, Seobuk-gu\nCheonan-si, Chungcheongnam-do\nSouth Korea, 31094",
+    "contact_label": "DIRECT CONTACT",
+    "hours_title": "CONCIERGE HOURS",
+    "mon_sat": "Monday - Saturday",
+    "sun": "Sunday",
+    "appointment": "By Appointment",
+    "note": "We recommend booking a private consultation for bridal selections or custom design inquiries to ensure our dedicated attention.",
+    "footer_subtitle": "BESPOKE JEWELRY GALLERY",
+    "footer_copy": "© 2026 Amaranto. All Rights Reserved. Cheonan, South Korea.\nMade by Cyber Alliance India"
+  },
+  "whatsapp": {
+    "text": "Speak with a consultant"
+  }
+}

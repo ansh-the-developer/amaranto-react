@@ -1,0 +1,57 @@
+{
+  "navbar": {
+    "boutique": "부티크 소개",
+    "collections": "컬렉션",
+    "gallery": "갤러리",
+    "contact": "오시는 길",
+    "inquire": "문의하기"
+  },
+  "hero": {
+    "subtitle": "천안 · 맞춤 예물 · 파인 주얼리",
+    "title_1": "클래식의",
+    "title_2": "새로운 재해석.",
+    "description": "유럽 바로크 양식의 화려함과 현대적인 한국 장인 정신의 만남. 천안의 프라이빗한 공간에서 당신만의 유산을 만나보세요.",
+    "explore": "컬렉션 보기",
+    "book": "방문 예약하기"
+  },
+  "about": {
+    "label": "우리의 철학",
+    "title_1": "보석함에 담긴",
+    "title_2": "화려한 예술.",
+    "description": "아마란토의 시그니처인 아이보리 엠보싱 갤러리에서 영감을 받아, 24k 순금과 진주의 광채를 고요함 속에서 감상할 수 있는 공간을 선사합니다.",
+    "feature_1": "바로크 인테리어 디자인",
+    "feature_2": "엄선된 다이아몬드",
+    "feature_3": "맞춤형 헤리티지 주얼리"
+  },
+  "collections": {
+    "label": "큐레이션 시리즈",
+    "title": "컬렉션",
+    "description": "데일리 18k 골드 주얼리부터 GIA 인증 스톤을 사용한 하이 주얼리까지.",
+    "items": {
+      "bridal": { "title": "브라이덜 & 솔리테어", "subtitle": "약혼 & 웨딩" },
+      "gold": { "title": "골드 라인", "subtitle": "데일리 럭셔리" },
+      "ocean": { "title": "오션 바로크", "subtitle": "천연 진주" },
+      "heritage": { "title": "헤리티지 커스텀", "subtitle": "세상에 단 하나뿐인 디자인" }
+    }
+  },
+  "gallery": {
+    "title": "갤러리",
+    "subtitle": "우아함의 엿보기"
+  },
+  "contact": {
+    "visit_title": "매장 방문",
+    "boutique_label": "부티크 위치",
+    "address": "아마란토 주얼리\n충청남도 천안시 서북구\n백석로 213\n(우) 31094",
+    "contact_label": "직통 문의",
+    "hours_title": "운영 시간",
+    "mon_sat": "월요일 - 토요일",
+    "sun": "일요일",
+    "appointment": "예약제 운영",
+    "note": "브라이덜 상담이나 맞춤 디자인 문의는 전담 응대를 위해 사전 예약을 권장합니다.",
+    "footer_subtitle": "맞춤 예물 갤러리",
+    "footer_copy": "© 2026 아마란토. All Rights Reserved. 대한민국 천안.\nMade by Cyber Alliance India"
+  },
+  "whatsapp": {
+    "text": "상담원 연결"
+  }
+}

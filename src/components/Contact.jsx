@@ -1,6 +1,9 @@
+import { useTranslation } from 'react-i18next';
 import './Contact.css';
 
 export default function Contact() {
+  const { t } = useTranslation();
+
   return (
     <>
       {/* Contact Section */}
@@ -8,21 +11,18 @@ export default function Contact() {
         <div className="contact-container">
           {/* Left Column - Visit Us */}
           <div className="contact-left">
-            <h2 className="contact-title">Visit Us.</h2>
+            <h2 className="contact-title">{t('contact.visit_title')}</h2>
             
             <div className="contact-details">
               <div className="contact-group">
-                <span className="contact-label">THE BOUTIQUE</span>
-                <p className="contact-address">
-                  Amaranto Jewelry<br />
-                  213 Baekseok-ro, Seobuk-gu<br />
-                  Cheonan-si, Chungcheongnam-do<br />
-                  South Korea, 31094
+                <span className="contact-label">{t('contact.boutique_label')}</span>
+                <p className="contact-address" style={{whiteSpace: 'pre-line'}}>
+                  {t('contact.address')}
                 </p>
               </div>
               
               <div className="contact-group">
-                <span className="contact-label">DIRECT CONTACT</span>
+                <span className="contact-label">{t('contact.contact_label')}</span>
                 <a href="tel:+821043764284" className="contact-phone">
                   +82 10 4376 4284
                 </a>
@@ -32,22 +32,21 @@ export default function Contact() {
 
           {/* Right Column - Hours */}
           <div className="contact-right">
-            <h3 className="hours-title">CONCIERGE HOURS</h3>
+            <h3 className="hours-title">{t('contact.hours_title')}</h3>
             
             <div className="hours-table">
               <div className="hours-row">
-                <span className="hours-day">Monday - Saturday</span>
+                <span className="hours-day">{t('contact.mon_sat')}</span>
                 <span className="hours-time">10:00 - 20:00</span>
               </div>
               <div className="hours-row">
-                <span className="hours-day">Sunday</span>
-                <span className="hours-time">By Appointment</span>
+                <span className="hours-day">{t('contact.sun')}</span>
+                <span className="hours-time">{t('contact.appointment')}</span>
               </div>
             </div>
             
             <p className="hours-note">
-              We recommend booking a private consultation for bridal selections or custom 
-              design inquiries to ensure our dedicated attention.
+              {t('contact.note')}
             </p>
           </div>
         </div>
@@ -58,11 +57,10 @@ export default function Contact() {
         <div className="footer-container">
           <div className="footer-logo">
             <h3 className="footer-title">AMARANTO</h3>
-            <p className="footer-subtitle">BESPOKE JEWELRY GALLERY</p>
+            <p className="footer-subtitle">{t('contact.footer_subtitle')}</p>
           </div>
-          <p className="footer-copy">
-            © 2026 Amaranto. All Rights Reserved. Cheonan, South Korea.
-            Made by Cyber Alliance India
+          <p className="footer-copy" style={{whiteSpace: 'pre-line'}}>
+            {t('contact.footer_copy')}
           </p>
         </div>
       </footer>

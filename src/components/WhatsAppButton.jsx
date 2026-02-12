@@ -1,6 +1,9 @@
+import { useTranslation } from 'react-i18next';
 import './WhatsAppButton.css';
 
 export default function WhatsAppButton() {
+  const { t } = useTranslation();
+
   return (
     <a 
       href="https://wa.me/821082724284" 
@@ -9,7 +12,7 @@ export default function WhatsAppButton() {
       rel="noopener noreferrer"
       aria-label="Speak with a consultant"
     >
-      <span className="whatsapp-text">Speak with a consultant</span>
+      <span className="whatsapp-text">{t('whatsapp.text')}</span>
       <div className="icon-circle">
         <svg 
           viewBox="0 0 24 24" 

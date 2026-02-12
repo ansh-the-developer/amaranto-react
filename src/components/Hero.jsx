@@ -1,12 +1,15 @@
+import { useTranslation } from 'react-i18next';
 import './Hero.css';
 
 export default function Hero() {
+  const { t } = useTranslation();
+
   return (
     <header className="hero-section">
       {/* Background Image - Using <img> with exact properties */}
       <div className="hero-bg-wrapper">
         <img 
-          src="/assets/gallery/gallery3.webp"  // ← Fixed quotes
+          src="/assets/gallery/gallery3.webp" 
           alt="Amaranto Jewelry Store" 
           className="hero-bg-image"
         />
@@ -17,18 +20,17 @@ export default function Hero() {
       
       {/* Content */}
       <div className="hero-content">
-        <p className="hero-subtitle">CHEONAN · BESPOKE · FINE JEWELRY</p>
+        <p className="hero-subtitle">{t('hero.subtitle')}</p>
         <h1 className="hero-title">
-          Classic<br />
-          <span className="hero-title-italic">Reimagined.</span>
+          {t('hero.title_1')}<br />
+          <span className="hero-title-italic">{t('hero.title_2')}</span>
         </h1>
         <p className="hero-description">
-          Where the ornate beauty of European Baroque meets modern Korean<br />
-          craftsmanship. Discover your legacy in our private Cheonan-si sanctuary.
+          {t('hero.description')}
         </p>
         <div className="hero-buttons">
-          <a href="#collections" className="btn-primary">EXPLORE COLLECTIONS</a>
-          <a href="#contact" className="btn-secondary">BOOK A VIEWING</a>
+          <a href="#collections" className="btn-primary">{t('hero.explore')}</a>
+          <a href="#contact" className="btn-secondary">{t('hero.book')}</a>
         </div>
       </div>
     </header>

@@ -164,3 +164,37 @@
     display: none;
   }
 }
+
+
+/* Add inside .navbar-actions */
+.lang-btn {
+  background: none;
+  border: 1px solid #E5E5E5;
+  border-radius: 4px;
+  padding: 4px 8px;
+  font-size: 10px;
+  font-weight: 700;
+  color: #5A5E61;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.lang-btn:hover {
+  border-color: var(--amaranto-gold);
+  color: var(--amaranto-gold);
+}
+
+/* Mobile Lang Button */
+.mobile-lang-wrapper {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+}
+
+.mobile-lang-btn {
+  background: none;
+  border: 1px solid #E5E5E5;
+  padding: 8px 16px;
+  font-size: 12px;
+  color: #5A5E61;
+}
