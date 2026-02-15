@@ -38,20 +38,24 @@
     "title": "갤러리",
     "subtitle": "우아함의 엿보기"
   },
-  "contact": {
-    "visit_title": "매장 방문",
-    "boutique_label": "부티크 위치",
-    "address": "아마란토 주얼리\n충청남도 천안시 서북구\n백석로 213\n(우) 31094",
-    "contact_label": "직통 문의",
-    "hours_title": "운영 시간",
-    "mon_sat": "월요일 - 토요일",
-    "sun": "일요일",
-    "appointment": "예약제 운영",
-    "note": "브라이덜 상담이나 맞춤 디자인 문의는 전담 응대를 위해 사전 예약을 권장합니다.",
-    "footer_subtitle": "맞춤 예물 갤러리",
-    "footer_copy": "© 2026 아마란토. All Rights Reserved. 대한민국 천안.\nMade by Cyber Alliance India"
-  },
+    "contact": {
+    "title": "당신의",
+    "match": "완벽한 매치를 찾아보세요.",
+    "visit_title": "갤러리 방문",
+    "hours_label": "운영 시간",
+    "hours_week": "월 - 토: 10:00 AM - 08:00 PM",
+    "hours_sun": "일요일: 예약제 운영",
+    "general_inquiries": "문의하기",
+    "store_direct": "매장 직통",
+    "private_viewing": "프라이빗 상담",
+    "private_desc": "약혼 및 맞춤 디자인을 위한 프라이빗 상담을 제공합니다. 예약하려면 전화해 주세요.",
+    "chat": "상담원과 대화하기",
+    "footer_subtitle": "변치 않는 우아함",
+    "footer_copy": "© 2026 AMARANTO JEWELRY. ALL RIGHTS RESERVED."
+  }
+,
   "whatsapp": {
     "text": "상담원 연결"
   }
+
 }

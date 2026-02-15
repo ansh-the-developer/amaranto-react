@@ -33,10 +33,10 @@ export default function Contact() {
               </div>
 
               <div className="hours-block">
-                <span className="label-small">HOURS</span>
+                <span className="label-small">{t('contact.hours_label', 'HOURS')}</span>
                 <div className="hours-list">
-                  <p>Mon - Sat: 10:00 AM - 08:00 PM</p>
-                  <p>Sunday: By Appointment</p>
+                  <p>{t('contact.hours_week', 'Mon - Sat: 10:00 AM - 08:00 PM')}</p>
+                  <p>{t('contact.hours_sun', 'Sunday: By Appointment')}</p>
                 </div>
               </div>
             </div>
@@ -47,13 +47,13 @@ export default function Contact() {
               {/* Contact Numbers Row */}
               <div className="details-row">
                 <div className="detail-item">
-                  <span className="label-small">GENERAL INQUIRIES</span>
+                  <span className="label-small">{t('contact.general_inquiries', 'GENERAL INQUIRIES')}</span>
                   <a href="tel:+821043764284" className="phone-large">+82 10 4376 4284</a>
-                  <p className="sub-text">Store Direct: 041-555-6009</p>
+                  <p className="sub-text">{t('contact.store_direct', 'Store Direct')}: 041-555-6009</p>
                 </div>
 
                 <div className="detail-item">
-                  <span className="label-small">PRIVATE VIEWING</span>
+                  <span className="label-small">{t('contact.private_viewing', 'PRIVATE VIEWING')}</span>
                   <p className="desc-text">
                     {t('contact.private_desc', 'We offer private consultations for engagement and custom designs. Please call to schedule an appointment.')}
                   </p>
