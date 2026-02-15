@@ -24,16 +24,21 @@
     "feature_3": "맞춤형 헤리티지 주얼리"
   },
   "collections": {
-    "label": "큐레이션 시리즈",
-    "title": "컬렉션",
-    "description": "데일리 18k 골드 주얼리부터 GIA 인증 스톤을 사용한 하이 주얼리까지.",
+    "label": "컬렉션",
+    "title": "엄선된 셀렉션",
+    "description": "정교함과 우아함으로 제작된 엄선된 주얼리 컬렉션을 만나보세요.",
     "items": {
-      "bridal": { "title": "브라이덜 & 솔리테어", "subtitle": "약혼 & 웨딩" },
-      "gold": { "title": "골드 라인", "subtitle": "데일리 럭셔리" },
-      "ocean": { "title": "오션 바로크", "subtitle": "천연 진주" },
-      "heritage": { "title": "헤리티지 커스텀", "subtitle": "세상에 단 하나뿐인 디자인" }
+      "ring": { "title": "반지" },
+      "bracelet": { "title": "팔찌" },
+      "necklace": { "title": "목걸이" },
+      "earring": { "title": "귀걸이" },
+      "bridal": { "subtitle": "브라이달 컬렉션" },
+      "gold": { "subtitle": "순금 시리즈" },
+      "ocean": { "subtitle": "남양 진주" },
+      "heritage": { "subtitle": "헤리티지 디자인" }
     }
-  },
+  }
+,
   "gallery": {
     "title": "갤러리",
     "subtitle": "우아함의 엿보기"

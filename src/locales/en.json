@@ -23,17 +23,22 @@
     "feature_2": "HAND-SELECTED DIAMONDS",
     "feature_3": "BESPOKE HERITAGE PIECES"
   },
-  "collections": {
-    "label": "CURATED SERIES",
-    "title": "The Collections",
-    "description": "From daily essentials in 18k gold to once-in-a-lifetime high jewelry pieces featuring GIA certified stones.",
+   "collections": {
+    "label": "THE COLLECTION",
+    "title": "Curated Selection",
+    "description": "Discover our handpicked selection of fine jewelry, crafted with precision and elegance.",
     "items": {
-      "bridal": { "title": "Bridal & Solitaire", "subtitle": "ENGAGEMENT & WEDDING" },
-      "gold": { "title": "The Gold Line", "subtitle": "DAILY LUXURY" },
-      "ocean": { "title": "Ocean Baroque", "subtitle": "NATURAL PEARLS" },
-      "heritage": { "title": "Heritage Custom", "subtitle": "ONE-OF-A-KIND" }
+      "ring": { "title": "Rings" },
+      "bracelet": { "title": "Bracelets" },
+      "necklace": { "title": "Necklaces" },
+      "earring": { "title": "Earrings" },
+      "bridal": { "subtitle": "Bridal Collection" },
+      "gold": { "subtitle": "Pure Gold Series" },
+      "ocean": { "subtitle": "South Sea Pearls" },
+      "heritage": { "subtitle": "Heritage Design" }
     }
-  },
+  }
+,
   "gallery": {
     "title": "The Gallery",
     "subtitle": "A GLIMPSE OF ELEGANCE"

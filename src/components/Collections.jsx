@@ -8,27 +8,27 @@ export default function Collections() {
   const collectionItems = [
     {
       id: 1,
-      title: t('collections.items.bridal.title'),
-      subtitle: t('collections.items.bridal.subtitle'),
-      image: "/assets/collections/c1.webp"
+      title: t('collections.items.ring.title', 'Rings'), // 반지
+      // subtitle: t('collections.items.bridal.subtitle', 'Bridal Collection'),
+      image: "/assets/collections/n1.jpeg"
     },
     {
       id: 2,
-      title: t('collections.items.gold.title'),
-      subtitle: t('collections.items.gold.subtitle'),
-      image: "/assets/collections/c2.avif"
+      title: t('collections.items.bracelet.title', 'Bracelets'), // 팔찌 (Fixed spelling from 팔지)
+      // subtitle: t('collections.items.gold.subtitle', 'Pure Gold'),
+      image: "/assets/collections/n2.jpeg"
     },
     {
       id: 3,
-      title: t('collections.items.ocean.title'),
-      subtitle: t('collections.items.ocean.subtitle'),
-      image: "/assets/collections/c3.avif"
+      title: t('collections.items.necklace.title', 'Necklaces'), // 목걸이
+      // subtitle: t('collections.items.ocean.subtitle', 'Ocean Pearls'),
+      image: "/assets/collections/n3.jpeg"
     },
     {
       id: 4,
-      title: t('collections.items.heritage.title'),
-      subtitle: t('collections.items.heritage.subtitle'),
-      image: "/assets/collections/c4.jpg"
+      title: t('collections.items.earring.title', 'Earrings'), // 귀걸이
+      // subtitle: t('collections.items.heritage.subtitle', 'Heritage Design'),
+      image: "/assets/collections/n4.jpeg"
     }
   ];
 
@@ -38,12 +38,12 @@ export default function Collections() {
         {/* Header */}
         <div className="collections-header">
           <div className="header-left">
-            <span className="collections-label">{t('collections.label')}</span>
-            <h2 className="collections-title">{t('collections.title')}</h2>
+            <span className="collections-label">{t('collections.label', 'THE COLLECTION')}</span>
+            <h2 className="collections-title">{t('collections.title', 'Curated Selection')}</h2>
           </div>
           <div className="header-right">
             <p className="collections-description">
-              {t('collections.description')}
+              {t('collections.description', 'Discover our handpicked selection of fine jewelry, crafted with precision and elegance.')}
             </p>
           </div>
         </div>
@@ -57,6 +57,7 @@ export default function Collections() {
                   src={item.image} 
                   alt={item.title} 
                   className="card-image" 
+                  loading="lazy" 
                 />
               </div>
               <h3 className="card-title">{item.title}</h3>
