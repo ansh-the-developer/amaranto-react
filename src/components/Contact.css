@@ -1,8 +1,9 @@
-/* Contact Section */
+/* Contact.css */
 .contact-section {
-  padding: 4rem 2rem 4rem;
-  background-color: white;
-  border-top: 1px solid #F3F4F6;
+  background-color: #fff;
+  padding: 8rem 2rem;
+  color: #1a1a1a;
+  font-family: 'Inter', sans-serif; /* Use your main font */
 }
 
 .contact-container {
@@ -10,169 +11,165 @@
   margin: 0 auto;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 5rem;
+  gap: 4rem;
 }
 
-/* Left Column */
-.contact-left {
-  display: flex;
-  flex-direction: column;
-}
-
+/* Typography */
 .contact-title {
-  font-family: 'Playfair Display', serif;
+  font-family: 'Playfair Display', serif; /* Or your Serif font */
   font-size: 4rem;
-  font-weight: 300;
-  color: #1F2937;
-  text-decoration: underline;
-  text-decoration-thickness: 2px;
-  text-decoration-color: #B09B75;
-  text-underline-offset: 0.5rem;
-  margin-bottom: 3rem;
+  font-weight: 400;
+  margin-bottom: 4rem;
+  line-height: 1.1;
+  color: #1a1a1a;
+  position: relative;
+  display: inline-block;
 }
 
-.contact-details {
-  display: flex;
-  flex-direction: column;
-  gap: 3rem;
+/* Gold underline effect */
+.contact-title::after {
+  content: '';
+  position: absolute;
+  bottom: 10px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #C5A059; /* Gold accent */
+  opacity: 0.6;
+}
+
+.contact-label, .hours-title {
+  display: block;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  color: #C5A059; /* Gold accent */
+  margin-bottom: 1rem;
+  font-weight: 600;
 }
 
 .contact-group {
-  display: flex;
-  flex-direction: column;
-}
-
-.contact-label {
-  font-size: 10px;
-  font-weight: 700;
-  letter-spacing: 0.25em;
-  color: #B09B75;
-  text-transform: uppercase;
-  margin-bottom: 1rem;
+  margin-bottom: 3rem;
 }
 
 .contact-address {
-  font-size: 1.125rem;
-  line-height: 1.6;
-  color: #6B7280;
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #555;
   font-weight: 300;
-  margin: 0;
 }
 
 .contact-phone {
-  font-size: 2.5rem;
-  font-weight: 300;
-  color: #1F2937;
+  font-size: 2rem;
+  font-family: 'Playfair Display', serif;
+  color: #1a1a1a;
   text-decoration: none;
-  line-height: 1.2;
-  letter-spacing: -0.05em;
-  transition: color 0.3s;
+  border-bottom: 1px solid transparent;
+  transition: all 0.3s ease;
 }
 
 .contact-phone:hover {
-  color: #B09B75;
+  color: #C5A059;
+  border-bottom-color: #C5A059;
 }
 
-/* Right Column - Hours */
+/* Map Styling */
+.contact-map-wrapper {
+  margin-top: 2rem;
+  width: 100%;
+  height: 250px;
+  border-radius: 2px;
+  overflow: hidden;
+  border: 1px solid #f0f0f0;
+}
+
+.contact-map {
+  width: 100%;
+  height: 100%;
+  border: none;
+  filter: grayscale(100%) opacity(0.9); /* Aesthetic gray map */
+  transition: filter 0.3s ease;
+}
+
+.contact-map:hover {
+  filter: grayscale(0%) opacity(1); /* Color on hover */
+}
+
+/* Right Column */
 .contact-right {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+  padding-top: 8rem; /* Offset to align with content, not title */
 }
 
 .hours-title {
+  font-size: 1.5rem; /* Larger for section header */
   font-family: 'Playfair Display', serif;
-  font-size: 1.75rem;
-  font-weight: 400;
-  color: #1F2937;
-  margin-bottom: 2.5rem;
+  color: #1a1a1a;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: 2rem;
 }
 
 .hours-table {
   margin-bottom: 3rem;
+  border-top: 1px solid #f0f0f0;
 }
 
 .hours-row {
   display: flex;
   justify-content: space-between;
-  padding-bottom: 1rem;
-  border-bottom: 1px solid #F3F4F6;
-  margin-bottom: 1rem;
-}
-
-.hours-day {
-  font-size: 0.95rem;
-  color: #1F2937;
-  font-weight: 400;
-}
-
-.hours-time {
-  font-size: 0.95rem;
-  color: #6B7280;
-  font-weight: 300;
+  padding: 1.5rem 0;
+  border-bottom: 1px solid #f0f0f0;
+  font-size: 1rem;
+  color: #555;
 }
 
 .hours-note {
-  font-size: 0.875rem;
+  font-size: 0.9rem;
+  color: #888;
   line-height: 1.6;
-  color: #9CA3AF;
-  font-weight: 300;
+  max-width: 400px;
 }
 
 /* Footer */
 .footer {
-  padding: 4rem 2rem 2rem;
-  background-color: #111827;
-  color: white;
+  padding: 4rem 2rem;
+  background-color: #fcfcfc;
+  border-top: 1px solid #eee;
   text-align: center;
 }
 
-.footer-container {
-  max-width: 1200px;
-  margin: 0 auto;
-}
-
-.footer-logo {
-  margin-bottom: 1.5rem;
-}
-
-.footer-title {
+.footer-brand {
   font-family: 'Playfair Display', serif;
-  font-size: 2rem;
-  font-weight: 700;
-  letter-spacing: 0.3em;
-  color: white;
-  margin: 0;
+  letter-spacing: 0.1em;
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
 }
 
 .footer-subtitle {
-  font-size: 9px;
-  font-weight: 600;
-  letter-spacing: 0.5em;
-  color: #B09B75;
-  text-transform: uppercase;
-  margin-top: 0.5rem;
+  font-size: 0.7rem;
+  letter-spacing: 0.2em;
+  color: #C5A059;
+  margin-bottom: 2rem;
 }
 
 .footer-copy {
-  font-size: 10px;
-  letter-spacing: 0.15em;
-  color: #9CA3AF;
-  text-transform: uppercase;
+  font-size: 0.7rem;
+  color: #aaa;
+  letter-spacing: 0.05em;
 }
 
-/* Responsive */
+/* Mobile Responsiveness */
 @media (max-width: 768px) {
   .contact-container {
     grid-template-columns: 1fr;
-    gap: 3rem;
+    gap: 2rem;
   }
   
   .contact-title {
     font-size: 3rem;
   }
   
-  .contact-phone {
-    font-size: 2rem;
+  .contact-right {
+    padding-top: 0;
   }
 }
