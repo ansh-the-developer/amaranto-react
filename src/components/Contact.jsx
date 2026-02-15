@@ -6,41 +6,65 @@ export default function Contact() {
 
   return (
     <>
-      {/* Contact Section */}
-      <section id="contact" className="contact-section">
+      <section id="contact" className="contact-wrapper">
         <div className="contact-container">
           
-          {/* LEFT COLUMN - INFO */}
-          <div className="contact-left">
-            <h2 className="contact-title">{t('contact.visit_title', 'Visit Us.')}</h2>
+          {/* Main Headline */}
+          <div className="contact-header">
+            <h2 className="main-title">
+              {t('contact.title', "Let's find your")} 
+              <span className="italic-accent"> {t('contact.match', 'perfect match.')}</span>
+            </h2>
+          </div>
+
+          <div className="contact-content">
             
-            <div className="contact-details">
+            {/* LEFT CARD (White Box Style) */}
+            <div className="info-card">
+              <h3 className="card-title">{t('contact.visit_title', 'Visit Our Gallery')}</h3>
               
-              {/* Address Block */}
-              <div className="contact-group">
-                <span className="contact-label">{t('contact.boutique_label', 'THE BOUTIQUE')}</span>
-                <p className="contact-address">
-                  Amaranto Jewelry<br/>
+              <div className="info-block">
+                <span className="info-brand">Amaranto Jewelry</span>
+                <p className="info-text">
                   213 Ssangyong-daero, Seobuk-gu<br/>
                   Cheonan-si, Chungcheongnam-do<br/>
                   South Korea, 31094
                 </p>
               </div>
+
+              <div className="hours-block">
+                <span className="label-small">HOURS</span>
+                <div className="hours-list">
+                  <p>Mon - Sat: 10:00 AM - 08:00 PM</p>
+                  <p>Sunday: By Appointment</p>
+                </div>
+              </div>
+            </div>
+
+            {/* RIGHT SECTION (Contact Details + Map) */}
+            <div className="map-section">
               
-              {/* Phone Block */}
-              <div className="contact-group">
-                <span className="contact-label">{t('contact.contact_label', 'DIRECT CONTACT')}</span>
-                <a href="tel:+821043764284" className="contact-phone">
-                  +82 10 4376 4284
-                </a>
+              {/* Contact Numbers Row */}
+              <div className="details-row">
+                <div className="detail-item">
+                  <span className="label-small">GENERAL INQUIRIES</span>
+                  <a href="tel:+821043764284" className="phone-large">+82 10 4376 4284</a>
+                  <p className="sub-text">Store Direct: 041-555-6009</p>
+                </div>
+
+                <div className="detail-item">
+                  <span className="label-small">PRIVATE VIEWING</span>
+                  <p className="desc-text">
+                    {t('contact.private_desc', 'We offer private consultations for engagement and custom designs. Please call to schedule an appointment.')}
+                  </p>
+                </div>
               </div>
 
-              {/* MAP EMBED - EXACT LOCATION (213 Ssangyong-daero) */}
-              <div className="contact-map-wrapper">
+              {/* Map Container */}
+              <div className="map-container">
                 <iframe 
                   title="Amaranto Jewelry Location"
-                  className="contact-map"
-                  // Updated query to match your provided link: 213 Ssangyong-daero
+                  className="google-map"
                   src="https://maps.google.com/maps?q=213+Ssangyong-daero,+Seobuk-gu,+Cheonan-si,+Chungcheongnam-do,+South+Korea&t=&z=18&ie=UTF8&iwloc=&output=embed"
                   allowFullScreen
                   loading="lazy"
@@ -49,30 +73,16 @@ export default function Contact() {
 
             </div>
           </div>
-
-          {/* RIGHT COLUMN - HOURS */}
-          <div className="contact-right">
-            <h3 className="hours-title">{t('contact.hours_title', 'CONCIERGE HOURS')}</h3>
-            
-            <div className="hours-table">
-              <div className="hours-row">
-                <span className="hours-day">{t('contact.mon_sat', 'Monday - Saturday')}</span>
-                <span className="hours-time">10:00 - 20:00</span>
-              </div>
-              <div className="hours-row">
-                <span className="hours-day">{t('contact.sun', 'Sunday')}</span>
-                <span className="hours-time">{t('contact.appointment', 'By Appointment')}</span>
-              </div>
-            </div>
-            
-            <p className="hours-note">
-              {t('contact.note', 'We recommend booking a private consultation for bridal selections or custom design inquiries to ensure our dedicated attention.')}
-            </p>
-          </div>
         </div>
+        
+        {/* Floating WhatsApp Button */}
+        <a href="https://wa.me/821043764284" target="_blank" rel="noopener noreferrer" className="floating-chat">
+          <span className="chat-text">{t('contact.chat', 'Speak with a Consultant')}</span>
+          <div className="chat-icon"></div>
+        </a>
       </section>
 
-      {/* Footer */}
+      {/* Footer (Kept Intact) */}
       <footer className="footer">
         <div className="footer-container">
           <div className="footer-logo">

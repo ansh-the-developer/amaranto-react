@@ -1,175 +1,243 @@
 /* Contact.css */
-.contact-section {
+.contact-wrapper {
   background-color: #fff;
-  padding: 8rem 2rem;
-  color: #1a1a1a;
-  font-family: 'Inter', sans-serif; /* Use your main font */
+  padding: 6rem 1rem;
+  font-family: 'Inter', sans-serif;
+  position: relative;
 }
 
 .contact-container {
   max-width: 1200px;
   margin: 0 auto;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 4rem;
+  padding-bottom: 4rem;
 }
 
-/* Typography */
-.contact-title {
-  font-family: 'Playfair Display', serif; /* Or your Serif font */
-  font-size: 4rem;
-  font-weight: 400;
+/* Header */
+.contact-header {
   margin-bottom: 4rem;
-  line-height: 1.1;
-  color: #1a1a1a;
-  position: relative;
-  display: inline-block;
+  padding-left: 0; /* Mobile default */
 }
 
-/* Gold underline effect */
-.contact-title::after {
-  content: '';
-  position: absolute;
-  bottom: 10px;
-  left: 0;
-  width: 100%;
-  height: 2px;
-  background-color: #C5A059; /* Gold accent */
-  opacity: 0.6;
+@media (min-width: 992px) {
+  .contact-header {
+    margin-left: 380px; /* Offset to align with right column */
+  }
 }
 
-.contact-label, .hours-title {
-  display: block;
-  font-size: 0.75rem;
-  text-transform: uppercase;
-  letter-spacing: 0.15em;
-  color: #C5A059; /* Gold accent */
-  margin-bottom: 1rem;
-  font-weight: 600;
-}
-
-.contact-group {
-  margin-bottom: 3rem;
-}
-
-.contact-address {
-  font-size: 1.1rem;
-  line-height: 1.8;
-  color: #555;
-  font-weight: 300;
-}
-
-.contact-phone {
-  font-size: 2rem;
+.main-title {
   font-family: 'Playfair Display', serif;
+  font-size: 2.5rem;
+  font-weight: 400;
   color: #1a1a1a;
-  text-decoration: none;
-  border-bottom: 1px solid transparent;
-  transition: all 0.3s ease;
 }
 
-.contact-phone:hover {
-  color: #C5A059;
-  border-bottom-color: #C5A059;
+.italic-accent {
+  font-style: italic;
+  font-family: 'Playfair Display', serif;
 }
 
-/* Map Styling */
-.contact-map-wrapper {
-  margin-top: 2rem;
-  width: 100%;
-  height: 250px;
-  border-radius: 2px;
-  overflow: hidden;
+/* Layout Grid */
+.contact-content {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+@media (min-width: 992px) {
+  .contact-content {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+}
+
+/* Left Card (White Box) */
+.info-card {
+  background: #fff;
+  padding: 2rem;
   border: 1px solid #f0f0f0;
-}
-
-.contact-map {
+  box-shadow: 0 4px 20px rgba(0,0,0,0.03);
   width: 100%;
-  height: 100%;
-  border: none;
-  filter: grayscale(100%) opacity(0.9); /* Aesthetic gray map */
-  transition: filter 0.3s ease;
+  max-width: 350px; /* Fixed width like Abel */
 }
 
-.contact-map:hover {
-  filter: grayscale(0%) opacity(1); /* Color on hover */
-}
-
-/* Right Column */
-.contact-right {
-  padding-top: 8rem; /* Offset to align with content, not title */
-}
-
-.hours-title {
-  font-size: 1.5rem; /* Larger for section header */
+.card-title {
   font-family: 'Playfair Display', serif;
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
   color: #1a1a1a;
-  text-transform: uppercase;
-  letter-spacing: 0.05em;
+}
+
+.info-block {
   margin-bottom: 2rem;
 }
 
-.hours-table {
-  margin-bottom: 3rem;
-  border-top: 1px solid #f0f0f0;
+.info-brand {
+  display: block;
+  font-weight: 600;
+  color: #1a1a1a;
+  margin-bottom: 0.25rem;
 }
 
-.hours-row {
-  display: flex;
-  justify-content: space-between;
-  padding: 1.5rem 0;
-  border-bottom: 1px solid #f0f0f0;
-  font-size: 1rem;
-  color: #555;
-}
-
-.hours-note {
+.info-text {
+  color: #666;
   font-size: 0.9rem;
-  color: #888;
   line-height: 1.6;
-  max-width: 400px;
 }
 
-/* Footer */
+.hours-block {
+  border-top: 1px solid #f0f0f0;
+  padding-top: 1.5rem;
+}
+
+.hours-list p {
+  margin: 0;
+  color: #666;
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+
+/* Right Section */
+.map-section {
+  flex: 1;
+  width: 100%;
+}
+
+.details-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4rem;
+  margin-bottom: 2rem;
+}
+
+.detail-item {
+  flex: 1;
+  min-width: 200px;
+}
+
+.label-small {
+  display: block;
+  font-size: 0.7rem;
+  font-weight: 700;
+  color: #999;
+  letter-spacing: 0.05em;
+  margin-bottom: 0.5rem;
+  text-transform: uppercase;
+}
+
+.phone-large {
+  display: block;
+  font-family: 'Playfair Display', serif;
+  font-size: 1.8rem;
+  color: #1a1a1a;
+  text-decoration: none;
+  line-height: 1.2;
+}
+
+.sub-text {
+  font-size: 0.85rem;
+  color: #888;
+  margin-top: 0.5rem;
+}
+
+.desc-text {
+  font-size: 0.9rem;
+  color: #666;
+  line-height: 1.6;
+  max-width: 300px;
+}
+
+/* Map */
+.map-container {
+  background: #f4f4f4;
+  height: 300px;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  border-radius: 4px; /* Optional: Slight rounding for modern feel */
+}
+
+.google-map {
+  width: 100%;
+  height: 100%;
+  border: none;
+  /* filter: grayscale(100%) opacity(0.9);  <-- REMOVED THIS LINE */
+  filter: none; /* Ensuring full color */
+  display: block;
+}
+
+/* Floating Chat Button */
+.floating-chat {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  background: white;
+  padding: 0.8rem 1.5rem;
+  border-radius: 50px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  text-decoration: none;
+  z-index: 1000;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.floating-chat:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+}
+
+.chat-text {
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  color: #888;
+  text-transform: uppercase;
+}
+
+.chat-icon {
+  width: 32px;
+  height: 32px;
+  background-color: #C5A059; /* Gold accent */
+  border-radius: 50%;
+  position: relative;
+}
+
+.chat-icon::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 8px;
+  height: 8px;
+  background: white;
+  border-radius: 50%;
+}
+
+/* Footer (Minimal updates to match) */
 .footer {
-  padding: 4rem 2rem;
-  background-color: #fcfcfc;
+  padding: 2rem 0;
   border-top: 1px solid #eee;
   text-align: center;
+  background: #fff;
 }
 
 .footer-brand {
   font-family: 'Playfair Display', serif;
-  letter-spacing: 0.1em;
   font-size: 1.2rem;
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.2rem;
 }
 
 .footer-subtitle {
-  font-size: 0.7rem;
+  font-size: 0.65rem;
   letter-spacing: 0.2em;
   color: #C5A059;
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
 }
 
 .footer-copy {
-  font-size: 0.7rem;
-  color: #aaa;
+  font-size: 0.65rem;
+  color: #bbb;
   letter-spacing: 0.05em;
-}
-
-/* Mobile Responsiveness */
-@media (max-width: 768px) {
-  .contact-container {
-    grid-template-columns: 1fr;
-    gap: 2rem;
-  }
-  
-  .contact-title {
-    font-size: 3rem;
-  }
-  
-  .contact-right {
-    padding-top: 0;
-  }
 }
