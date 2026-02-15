@@ -241,3 +241,48 @@
   color: #bbb;
   letter-spacing: 0.05em;
 }
+/* Footer Updates */
+.footer-copy-block {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+.footer-maker {
+  font-size: 0.7rem;
+  color: #bbb;
+  letter-spacing: 0.05em;
+  margin: 0;
+}
+
+/* The Popping Link Style */
+.cyber-link {
+  color: #C5A059; /* Gold accent */
+  font-weight: 800;
+  text-decoration: none;
+  display: inline-block;
+  transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275); /* Bouncy transition */
+  position: relative;
+}
+
+.cyber-link:hover {
+  color: #1a1a1a; /* Turns black on hover */
+  transform: scale(1.1) translateY(-2px); /* Pops up and grows */
+  text-shadow: 0 4px 10px rgba(197, 160, 89, 0.3); /* Glowing shadow */
+}
+
+.cyber-link::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: -2px;
+  left: 0;
+  background-color: #C5A059;
+  transition: width 0.3s ease;
+}
+
+.cyber-link:hover::after {
+  width: 100%; /* Underline animates in */
+}
