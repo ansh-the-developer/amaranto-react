@@ -75,11 +75,11 @@ export default function Contact() {
           </div>
         </div>
         
-        {/* Floating WhatsApp Button */}
+        {/* Floating WhatsApp Button
         <a href="https://wa.me/821043764284" target="_blank" rel="noopener noreferrer" className="floating-chat">
           <span className="chat-text">{t('contact.chat', 'Speak with a Consultant')}</span>
           <div className="chat-icon"></div>
-        </a>
+        </a> */}
       </section>
 
       {/* Footer (Kept Intact) */}
